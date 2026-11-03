@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "factory": {
+      "command": "node",
+      "args": [
+        "C:/Users/Admin/Documents/factory/node_modules/tsx/dist/cli.mjs",
+        "C:/Users/Admin/Documents/factory/apps/mcp/src/index.ts"
+      ],
+      "env": {}
+    }
+  }
+}

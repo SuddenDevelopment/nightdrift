@@ -1,0 +1,114 @@
+[
+  {
+    "kind": "task",
+    "id": "e06bde4c",
+    "before": null,
+    "after": "---\nid: \"e06bde4c\"\ntitle: \"Seed permalink\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:seed-permalink\"\ncreated_at: \"2026-11-03T21:36:54.053Z\"\nupdated_at: \"2026-11-03T21:36:54.053Z\"\n---\n\nURL hash carries seed + time-of-day + camera preset; a Shuffle button rerolls and rewrites the hash.\nSomeone finds a city they like and can hand the exact drive to a friend.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "f97b6d97573715055695981dc3009a4469313edb9975b35039de7264325c59a3"
+  },
+  {
+    "kind": "task",
+    "id": "14e7f25b",
+    "before": null,
+    "after": "---\nid: \"14e7f25b\"\ntitle: \"Tunnels and underpasses\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:tunnels-and-underpasses\"\ncreated_at: \"2026-11-03T21:36:54.054Z\"\nupdated_at: \"2026-11-03T21:36:54.054Z\"\n---\n\nSeeded covered road segments that darken the sky, kill the fog, and run the whole audio bus through a low-pass + short reverb while inside.\nThe ten seconds of muffled dark before the city comes back is the single best moment of any night drive.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "26229674441f051047507126281d38e7677e64ac8cc28b71b4f11966159f9f83"
+  },
+  {
+    "kind": "task",
+    "id": "482ec5e0",
+    "before": null,
+    "after": "---\nid: \"482ec5e0\"\ntitle: \"Weather states\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:weather-states\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nSeeded clear / drizzle / downpour with instanced rain, wet-road reflection via a blurred mirrored render, and rain noise layered into the score.\nWet asphalt doubles every light in the city.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "1626e2d2f93884cc961bea0a15bfc438747893cfe67ef0a609701f8e49e9b0f4"
+  },
+  {
+    "kind": "task",
+    "id": "9256d9c4",
+    "before": null,
+    "after": "---\nid: \"9256d9c4\"\ntitle: \"Traffic\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:traffic\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nInstanced vehicles on a seeded lane model, tail lights ahead, headlight glow oncoming, speeds that let you pass and be passed.\nAn empty city reads as a tech demo; two red lights drifting ahead reads as a place.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "c7025f791f347aa7c96e10982dfec62b515ba8df249e4a6592d4c2fcbcc86d5d"
+  },
+  {
+    "kind": "task",
+    "id": "98694022",
+    "before": null,
+    "after": "---\nid: \"98694022\"\ntitle: \"Districts\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:districts\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nSeeded zones (downtown towers, low industrial, waterfront, residential) that change building height rules, light color, density, and the score's scale and instrument set.\nCrossing an invisible line and hearing the music change tells you you have actually gone somewhere.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "bf277abf0feeca24794aa970a5ecfdf66a95719bcf15a0c0d3f87931cc039c48"
+  },
+  {
+    "kind": "task",
+    "id": "a2bfa896",
+    "before": null,
+    "after": "---\nid: \"a2bfa896\"\ntitle: \"Adaptive quality governor\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:adaptive-quality-governor\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nRolling frame-time measurement drives draw distance, instance counts, and post effects between quality tiers, with a manual override in the HUD and the tier shown.\nA locked 60fps on a laptop is the difference between a trance and a slideshow.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "174077a70bfcca994382cb1ac9b29336ebee5ac92421d6fa089dbaf9f1c77cd3"
+  },
+  {
+    "kind": "task",
+    "id": "64496677",
+    "before": null,
+    "after": "---\nid: \"64496677\"\ntitle: \"Accessibility and comfort pass\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:accessibility-and-comfort-pass\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nFull keyboard control, visible focus, screen-reader labels on the HUD, a photosensitivity-safe mode that caps flicker and bloom, plus a reduced-motion variant of every new effect from T2-T5.\nLets people who would get sick or locked out of the first version take the drive.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "af9092ef2196be072cd4e0017f31e439d2e6801c516c8a8a9ff30fd3cfb52984"
+  },
+  {
+    "kind": "task",
+    "id": "0fdc8bc9",
+    "before": null,
+    "after": "---\nid: \"0fdc8bc9\"\ntitle: \"Postcard export\"\nstatus: \"backlog\"\npriority: 1\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:postcard-export\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nCanvas capture to PNG with seed and odometer stamped in a corner, downloaded or copied to clipboard.\nA drive that leaves an artifact gets shown to someone else.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "4b63417f232be5e858336736b1b8204cc10079fc9e871d2d70a81f4fa89d8085"
+  },
+  {
+    "kind": "task",
+    "id": "58b90e1f",
+    "before": null,
+    "after": "---\nid: \"58b90e1f\"\ntitle: \"Radio\"\nstatus: \"backlog\"\npriority: 2\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:radio\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nThree or four named score presets (different scales, tempos, instrument weights) switchable mid-drive with a crossfade; choice persists in localStorage and the permalink.\nChanging the station is how you change the mood of a drive without stopping it.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "b0adbf54507799016276a04edf4bb54863f78905314f449aea425a58c6792cd3"
+  },
+  {
+    "kind": "task",
+    "id": "ad546188",
+    "before": null,
+    "after": "---\nid: \"ad546188\"\ntitle: \"Camera presets\"\nstatus: \"backlog\"\npriority: 2\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:camera-presets\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nHood, rear-window, low chase, and slow overhead, cycled by key with eased transitions, each with its own reduced-motion variant.\nThe same street is a different city from six feet lower.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "54f5dcdd52c7d4fd54ad07034e0f2f49cb0b2b1eb01afb1c37cd6dd63e8514ec"
+  },
+  {
+    "kind": "task",
+    "id": "35524bdd",
+    "before": null,
+    "after": "---\nid: \"35524bdd\"\ntitle: \"Odometer and trip log\"\nstatus: \"backlog\"\npriority: 2\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:odometer-and-trip-log\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nDistance, elapsed time, districts entered, and tunnels passed accumulated per seed and stored in localStorage, shown on the start screen as \"you have driven 12.4 km here\".\nReturning to a city you have already driven makes it yours.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "070c01c5427c8b68d5fdcd1544dc5f41da33e06b27cb49b28bb6940e4b82f07e"
+  },
+  {
+    "kind": "task",
+    "id": "3ae21b87",
+    "before": null,
+    "after": "---\nid: \"3ae21b87\"\ntitle: \"Procedural signage\"\nstatus: \"backlog\"\npriority: 2\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:procedural-signage\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nEmissive quads on building faces generated from the seed: letterform-free neon shapes, scrolling bars, window-grid patterns that flicker on a per-building schedule.\nSigns you can almost read are the texture that makes a skyline feel inhabited.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "d6b9dfda7ba5b86451e6c1a394c1c2021f4189fd6dc933dab6753d1d9c9be708"
+  },
+  {
+    "kind": "task",
+    "id": "ac5922e0",
+    "before": null,
+    "after": "---\nid: \"ac5922e0\"\ntitle: \"Mixer\"\nstatus: \"backlog\"\npriority: 2\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:mixer\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nHUD panel with per-layer gain (pad, bass, percussion, city noise) and a master duck, persisted and included in the permalink.\nLets someone tune the drive into something they can leave running while working.\n\n#\n",
+    "beforeHash": null,
+    "afterHash": "f54d31c18230c1b48584f6d6ee9fd1a73166a2ba093cf78a51b98a0eda97a792"
+  },
+  {
+    "kind": "task",
+    "id": "17bcd815",
+    "before": null,
+    "after": "---\nid: \"17bcd815\"\ntitle: \"Park\"\nstatus: \"backlog\"\npriority: 2\ndepends_on: []\nfiles: []\nacceptance: null\nlast_acceptance: null\nsource_run_id: \"66588ec0-11b7-4a39-a32d-7c79ca425194\"\nsource_ref: \"proposed:park\"\ncreated_at: \"2026-11-03T21:36:54.055Z\"\nupdated_at: \"2026-11-03T21:36:54.055Z\"\n---\n\nPull over: the car eases to a stop, the drift camera idles, percussion drops out, and the city keeps going without you.\nSometimes the drive is best from the kerb.\n",
+    "beforeHash": null,
+    "afterHash": "9ed161769cf97fc9f3f46795febf9846c09e8283edae0e73fa3f5f773dd64b89"
+  }
+]
