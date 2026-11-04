@@ -35,6 +35,7 @@ export default defineConfig({
       use: {
         ...devices['Desktop Firefox'],
         launchOptions: {
+          env: { ...process.env, LIBGL_ALWAYS_SOFTWARE: '1' },
           firefoxUserPrefs: { 'webgl.disabled': false, 'webgl.force-enabled': true },
         },
       },
