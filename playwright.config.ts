@@ -35,8 +35,8 @@ export default defineConfig({
       use: {
         ...devices['Desktop Firefox'],
         launchOptions: {
-          env: { ...process.env, LIBGL_ALWAYS_SOFTWARE: '1' },
-          firefoxUserPrefs: { 'webgl.disabled': false, 'webgl.force-enabled': true },
+          env: { ...process.env, LIBGL_ALWAYS_SOFTWARE: '1', MOZ_WEBGL_FORCE_DISABLE_HW: '1', GALLIUM_DRIVER: 'llvmpipe' },
+          firefoxUserPrefs: { 'webgl.disabled': false, 'webgl.force-enabled': true, 'gfx.x11-egl.force-enabled': false, 'layers.gpu-process.enabled': false },
         },
       },
     },
