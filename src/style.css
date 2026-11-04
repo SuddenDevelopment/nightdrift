@@ -1,0 +1,104 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #e5e9f4;
+  background: #0b1020;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+}
+
+#scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background: #0b1020;
+}
+
+.overlay[hidden],
+#hud[hidden],
+#audio-retry[hidden] {
+  display: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.tagline {
+  margin: 0;
+  max-width: 34ch;
+  opacity: 0.75;
+}
+
+.version {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid #5a648f;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a2140;
+}
+
+button:focus-visible {
+  outline: 2px solid #8fb4ff;
+  outline-offset: 3px;
+}
+
+#hud {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+#audio-status {
+  margin: 0;
+  opacity: 0.8;
+}
+
+#audio-status[data-state='blocked'] {
+  opacity: 1;
+  color: #ffd27f;
+}

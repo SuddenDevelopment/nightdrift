@@ -1,0 +1,8 @@
+{
+  "url": "http://localhost:5199",
+  "start": "npm run dev -- --port 5199 --strictPort",
+  "routes": ["/"],
+  "click": {
+    "/": ["#start", "canvas[data-ready='true']"]
+  }
+}
