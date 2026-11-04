@@ -78,6 +78,11 @@ npx kill-port 4173            # or: Get-NetTCPConnection -LocalPort 4173
 `npm run verify` builds twice — once directly, once inside the Playwright web
 server — which is accepted in exchange for that guarantee.
 
+Workers are capped at two (one in CI). Each scenario holds a live WebGL 2
+context and an unthrottled render loop, and both browser projects share one
+preview server; Playwright's default worker count starved it and intermittently
+cost a page its module script.
+
 ## CI
 
 `.github/workflows/ci.yml` runs on pushes to `main` and on pull requests. It

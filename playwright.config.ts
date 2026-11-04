@@ -9,7 +9,12 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: 0,
-  workers: process.env.CI ? 1 : undefined,
+  // Every scenario holds a live WebGL 2 context and an unthrottled render loop,
+  // in two browsers, against one single-threaded preview server. Playwright's
+  // default (half the CPU count) starved that server often enough that a page
+  // load dropped its module script and the app never mounted. Two at a time
+  // keeps the suite deterministic.
+  workers: process.env.CI ? 1 : 2,
   reporter: process.env.CI ? [['github'], ['html', { open: 'never' }]] : [['list']],
   use: {
     baseURL: BASE_URL,
