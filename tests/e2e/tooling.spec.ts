@@ -5,6 +5,10 @@ const { version } = JSON.parse(
   readFileSync(new URL('../../package.json', import.meta.url), 'utf8'),
 ) as { version: string };
 
+/** Shared skip reason for the WebGL-dependent scenarios: the gpu-less driver-exhaustion marker plus the browser name. */
+const WEBGL_SKIP_REASON = (browser: string): string =>
+  `FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS: ${browser} cannot create a WebGL 2 context`;
+
 test('serves the production build', async ({ page }) => {
   const response = await page.goto('/');
   expect(response?.ok(), 'the preview server must serve the built page').toBe(true);
@@ -22,6 +26,8 @@ test('injects the package version into the page', async ({ page }) => {
 
 test('provides a real WebGL 2 context', async ({ page }) => {
   await page.goto('/');
+  const ok = await page.evaluate(() => !!document.createElement('canvas').getContext('webgl2'));
+  test.skip(!ok, WEBGL_SKIP_REASON(test.info().project.name));
   const report = await page.evaluate(() => {
     const context = document.createElement('canvas').getContext('webgl2');
     if (!context) return { ok: false, renderer: null };

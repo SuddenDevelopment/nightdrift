@@ -55,10 +55,21 @@ function watchErrors(page: Page): string[] {
   return errors;
 }
 
+/** Shared skip reason for the WebGL-dependent scenarios: the gpu-less driver-exhaustion marker plus the browser name. */
+const WEBGL_SKIP_REASON = (browser: string): string =>
+  `FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS: ${browser} cannot create a WebGL 2 context`;
+
+/** Skips the running test unless this browser really provides WebGL 2. */
+async function requireWebgl2(page: Page): Promise<void> {
+  const ok = await page.evaluate(() => !!document.createElement('canvas').getContext('webgl2'));
+  test.skip(!ok, WEBGL_SKIP_REASON(test.info().project.name));
+}
+
 test.describe('foundation lifecycle', () => {
   test('starts the drive and reaches Factory capture readiness', async ({ page }) => {
     const errors = watchErrors(page);
     await page.goto('/?test=1');
+    await requireWebgl2(page);
 
     // Before Start: no drive, silent, not ready.
     await expect(page.locator('#start')).toBeVisible();
@@ -85,6 +96,7 @@ test.describe('foundation lifecycle', () => {
 
   test('ignores repeated Start activation', async ({ page }) => {
     await page.goto('/?test=1');
+    await requireWebgl2(page);
     const start = page.locator('#start');
     await start.click();
     await expect(page.locator("canvas[data-ready='true']")).toBeVisible();
@@ -104,6 +116,7 @@ test.describe('foundation lifecycle', () => {
     const errors = watchErrors(page);
     await blockAudio(page, 1);
     await page.goto('/?test=1');
+    await requireWebgl2(page);
     await page.locator('#start').click();
 
     await expect(page.locator('#audio-status')).toHaveAttribute('data-state', 'blocked');
@@ -141,6 +154,7 @@ test.describe('foundation lifecycle', () => {
 
   test('stops the drive and offers reload after context loss', async ({ page }) => {
     await page.goto('/?test=1');
+    await requireWebgl2(page);
     await page.locator('#start').click();
     await expect(page.locator("canvas[data-ready='true']")).toBeVisible();
 
@@ -158,6 +172,7 @@ test.describe('foundation lifecycle', () => {
 
   test('keeps rendering across a viewport resize', async ({ page }) => {
     await page.goto('/?test=1');
+    await requireWebgl2(page);
     await page.locator('#start').click();
     await expect(page.locator("canvas[data-ready='true']")).toBeVisible();
 
